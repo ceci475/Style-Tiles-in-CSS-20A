@@ -14,26 +14,12 @@ use the fonts in other ways in the font hierarchy etc. */
 
 /* change these */
 :root {
-  --bg-color: red;
-  --link-color: green;
-  --link-hover-color: blue;
-  --color-4: hotpink;
-  --color-5: rebeccapurple;
+  --bg-color: ;
+  --link-color: #DEE4E0;
+  --link-hover-color: white;
 
-  --primary-font: "Open Sans", sans-serif;
-  --secondary-font: "Droid Serif", serif;
-  --main-text-color: #000;
-
-  --white-space: 1rem;
-
-  --bg-color: #000;
-  --link-color: #000;
-  --link-hover-color: #000;
-  --color-4: #000;
-  --color-5: #000;
-
-  --primary-font: sans-serif;
-  --secondary-font: serif;
+  --primary-font: "Menlo", sans-serif;
+  --secondary-font: "Raleway", serif;
   --main-text-color: #000;
 
   --white-space: 2rem;
@@ -41,7 +27,7 @@ use the fonts in other ways in the font hierarchy etc. */
 
 html {
   font-size: 100%;
-  font-family: var(--primary-font);
+  font-family: "Menlo", sans-serif;
 }
 
 img {
@@ -58,7 +44,7 @@ footer {
 }
 
 .full-width {
-  background: var(--bg-color);
+  background: #E9E4D4;
   color: white;
   width: 100%;
 }
@@ -81,7 +67,6 @@ footer {
 
 .header-wrapper h3 {
   font-size: 1.2rem;
-  font-style: italic;
 }
 
 .header-wrapper h4 {
@@ -97,10 +82,9 @@ section {
 }
 
 .section-heading {
-  font-style: italic;
   font-size: 1.3rem;
-  color: #777;
-  margin: 0.5rem 0;
+  color: #151515;
+  margin: 1rem 0;
 }
 
 ul {
@@ -119,24 +103,46 @@ ul li:last-child {
 }
 
 .color-swatch-1 {
-  background-color: var(--bg-color);
+  background-color: #151515;
+    border-radius: 100px;
 }
 
 .color-swatch-2 {
-  background-color: var(--link-color);
+  background-color: #0737A8;
+     border-radius: 100px;
 }
 
 .color-swatch-3 {
-  background-color: var(--link-hover-color);
+  background-color: #DEE4E0;
+     border-radius: 100px;
 }
 
 .color-swatch-4 {
-  background-color: var(--color-4);
+  background-color: #E9E4D4;
+     border-radius: 100px;
 }
 
 .color-swatch-5 {
-  background-color: var(--color-5);
+  background-color: #C5BAA2;
+     border-radius: 100px;
 }
+
+.color-swatch-6 {
+  background-color: #D4D2BA;
+     border-radius: 100px;
+}
+
+.color-swatch-7 {
+  background-color: #D7BFA7;
+     border-radius: 100px;
+}
+
+.color-swatch-8 {
+  background-color: #D9D1B5;
+     border-radius: 100px;
+}
+
+
 
 .textures li {
   height: 30vw;
@@ -145,21 +151,18 @@ ul li:last-child {
 }
 
 .texture-swatch-1 {
-  background: url(../img/pw_maze_white.png) top left repeat;
+  background: url(../img/tekstur1.png) top left no-repeat;
+    background-size: contain;
 }
 
 .texture-swatch-2 {
-  background: url(../img/subtle_grunge.png) top left repeat;
+  background: url(../img/tekstur2.png) top left no-repeat;
+    background-size: contain;
 }
 
-.texture-swatch-1 {
-  background: url(../img/pw_maze_white.png) top left repeat;
+.swatchgrid {
+margin-bottom: 1rem;
 }
-
-.texture-swatch-3 {
-  background: url(../img/white_paperboard.png) top left repeat;
-}
-
 .images ul {
   flex-direction: column;
   text-align: center;
@@ -173,22 +176,21 @@ ul li:last-child {
 
 button {
   padding: 1rem;
-  border-radius: 4px;
+  border-radius: 50px;
   background: var(--link-color);
   text-align: center;
   text-decoration: none;
-  font: bold 1.25em/1 var(--primary-font);
+  font: 1em/1 var(--primary-font);
   letter-spacing: 1px;
-  color: white;
+  color: #0737A8;
   text-transform: uppercase;
-  text-shadow: 0px -1px 0px #0374a0;
   transition: all 0.2s ease;
   cursor: pointer;
   margin: 0 1rem 1rem 0;
 }
 
 .secondary-button {
-  background: var(--color-5);
+  background: ;
 }
 
 button:focus,
@@ -200,7 +202,7 @@ button:focus-within {
 
 button:hover {
   background-color: var(--link-hover-color);
-  transform: scale(3) rotate(40deg);
+  transform: scale(1.1);
 }
 
 button:active {
@@ -213,17 +215,18 @@ button:active {
 
 .h1-sample {
   font-size: 2.4rem;
+      font-family: "Raleway";
+    text-transform: uppercase;
   font-weight: bold;
 }
 
 .h2-sample {
-  font-family: var(--secondary-font);
-  font-style: italic;
+  font-family: "Menlo";
   font-size: 1.25rem;
 }
 
 p.typography-sample {
-  font-family: var(--secondary-font);
+  font-family: "Menlo";
   line-height: 1.5;
   max-width: 960px;
 }
@@ -233,21 +236,20 @@ strong {
 }
 
 em {
-  font-style: italic;
 }
 
 a {
-  font-family: var(--primary-font);
-  color: var(--link-color);
+  font-family: var(primary-font);;
+  color: #0737A8;
   font-weight: bold;
   text-decoration: none;
   transition: all 0.2s;
 }
 
 a:hover {
-  color: var(--link-hover-color);
+  color: #0737A8;
   font-size: 4rem;
-  background-color: var(--color-4);
+  background-color: white;
   opacity: 0.1;
 }
 
@@ -255,13 +257,14 @@ p[class*="font-details-"] {
   margin-top: 0.5rem;
   margin-bottom: calc(2 * var(--white-space));
   font-size: 0.75rem;
-  font-family: var(--secondary-font);
+  font-family: "Menlo", sans-serif;
   color: #6f6f6f;
 }
 
 .adjectives ul {
-  font-size: 2rem;
+  font-size: 1.2rem;
   opacity: 0.5;
+
 }
 
 .adjectives ul {
@@ -269,7 +272,6 @@ p[class*="font-details-"] {
 }
 
 footer {
-  font-style: italic;
 }
 
 @media (min-width: 800px) {
@@ -280,8 +282,8 @@ footer {
   }
 
   .swatches li {
-    margin-right: 3%;
-    height: 10vw;
+    margin-right: 1%;
+    height: 8.2vw;
     width: 20%;
   }
 
@@ -295,3 +297,4 @@ footer {
     flex-direction: row;
   }
 }
+
